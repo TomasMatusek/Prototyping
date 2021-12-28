@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    discovery:
+      enabled: false # for unit test we disabled eureka discover
+
+solutions:
+  matusek:
+    jwt:
+      issuer: "solutions.matusek"
+      algorithm: "RSA"
+      keySize: 2048
+      expirationSeconds: 3600
+    keyStore:
+      filePath: "/Users/matusek/Workplace/MatusekSolutions/MicroservicesApp/authentication-service/src/test/resources/test-keystore"
+      password: "aaa111"
+      type: "PKCS12"
+    certificate:
+      alias: "matusek.solutions"
+      password: "aaa111"
+      algorithm: "RSA"
+      keySize: 2048
