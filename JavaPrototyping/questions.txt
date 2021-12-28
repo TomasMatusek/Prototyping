@@ -1,0 +1,39 @@
+1) Memory management
+Difference between Heap and Stack
+GB collector
+Reference to objects
+Initialization order
+
+2) Operators
+What is difference between | and ||, & and &&
+What is ^ and !
+What is bitwise operator
+++value vs value++
+
+3) Flow
+Label, break, continue
+
+4) Date time API
+LocalDateTime, LocalDate, LocalTime
+
+5) File API
+Work with files, read, write, try-with-resources
+
+6) Java 9 Modularity
+https://github.com/mohamed-taman/Java-SE-Code-Examples
+module-info.java
+requires
+requires static (compile time dependencies only)
+require transitive
+export
+export ... to
+uses (an implementation of a specific interface)
+opens (package only)
+opens ... to
+
+7) OOP
+Multiple classes in one file
+
+8) Compile time vs runtime
+Class loader
+ArrayList.class.get* - check that
