@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS user_detail (
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
+    email VARCHAR(128) NOT NULL,
+    password VARCHAR(256) NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT NOW(),
+    enabled BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE IF NOT EXISTS user_roles (
+    user_id VARCHAR(36) NOT NULL,
+    role VARCHAR(64) NOT NULL,
+    PRIMARY KEY (user_id, role),
+    FOREIGN KEY (user_id) REFERENCES user_detail(id) ON DELETE CASCADE
+);

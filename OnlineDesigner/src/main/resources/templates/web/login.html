@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home</title>
+    <head th:include="web/fragments.html :: head"></head>
+</head>
+<body>
+<nav th:include="web/fragments.html :: top-navigation"></nav>
+
+<main>
+
+    <span th:text="${currentUser}"></span>
+
+    <div class="container">
+        <div th:if="${success != null}" class="row">
+            <div class="col-md-12">
+                <div th:if="${ ! success}" class="alert alert-danger" role="alert">
+                    <span th:text="${message}"></span>
+                </div>
+                <div th:if="${success}" class="alert alert-success" role="alert">
+                    <span th:text="${message}"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form th:attr="action=@{/login}" method="POST">
+                    <div class="form-group">
+                        <label for="username">Email address</label>
+                        <input type="username" name="username" id="username" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:include="web/fragments.html :: footer"></footer>
+</body>
+</html>
