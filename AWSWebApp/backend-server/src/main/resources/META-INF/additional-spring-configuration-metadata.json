@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "pom.project.version",
+      "type": "java.lang.String",
+      "description": "Description for pom.project.version."
+    },
+    {
+      "name": "pom.project.groupId",
+      "type": "java.lang.String",
+      "description": "Description for pom.project.groupId."
+    },
+    {
+      "name": "pom.project.artifactId",
+      "type": "java.lang.String",
+      "description": "Description for pom.project.artifactId."
+    }
+  ] }
