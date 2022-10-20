@@ -15,4 +15,4 @@ repository.getPreferences(userId);
 ## Part 11
 
 - Observer pattern
-- 
+- Subscriber pattern

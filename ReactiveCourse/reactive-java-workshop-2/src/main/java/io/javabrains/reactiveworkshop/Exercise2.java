@@ -24,11 +24,17 @@ public class Exercise2 {
         // Print all users in the ReactiveSources.userFlux stream
         ReactiveSources.userFlux().subscribe(user -> System.out.println(user));
 
+        Flux<Integer> stream = ReactiveSources.intNumbersFlux();
+        stream.subscribe(event -> System.out.println("Event A: " + event));
+        stream.subscribe(event -> System.out.println("Event B: " + event));
+
         // If this is commented out it won't print anything because process is killed (main is done)
-        // We are hanging out so events can be emitted
+        // We are hanging out so events can be emitted; we need something to be running in order to emitt events
         System.out.println("Press a key to end");
         System.in.read();
 
+        // Is it multithreading ? -> It depends on how it is executed in subscribe() method
+        // Reactive programming and multithreading are different topics
     }
 
 }
