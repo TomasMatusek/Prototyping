@@ -16,3 +16,19 @@ repository.getPreferences(userId);
 
 - Observer pattern
 - Subscriber pattern
+
+## Part 15
+
+- Flow and Stream API in Java 9
+- Three abstractions (interfaces only)
+    - Publisher
+    - Subscriber
+    - Subscription
+- We will use
+    - Flux - asynchronous sequence of items 0..n items
+    - Mono - asynchronous item - one item that can come in the future 0..1 item
+
+## Part 16
+
+- Mono
+- 

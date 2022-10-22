@@ -60,7 +60,7 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Exercise2">
+  <component name="RunManager" selected="Application.Exercise4">
     <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise1" />
       <module name="reactive-example" />
@@ -87,6 +87,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise3" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise4" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exercise7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise7" />
       <module name="reactive-example" />
@@ -100,39 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise8" />
-      <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Exercise9" />
-      <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exercise4" />
+        <item itemvalue="Application.Exercise3" />
         <item itemvalue="Application.Exercise2" />
         <item itemvalue="Application.Exercise1" />
         <item itemvalue="Application.Exercise7" />
-        <item itemvalue="Application.Exercise9" />
-        <item itemvalue="Application.Exercise8" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +149,7 @@
       <workItem from="1661430665721" duration="6641000" />
       <workItem from="1661934570013" duration="1012000" />
       <workItem from="1666188886672" duration="1773000" />
+      <workItem from="1666265616966" duration="2446000" />
     </task>
     <servers />
   </component>
