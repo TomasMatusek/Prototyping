@@ -35,8 +35,7 @@ public class ReactiveSources {
     }
 
     public static Mono<Integer> intNumberMono() {
-        return Mono.just(42)
-                .delayElement(Duration.ofSeconds(1));
+        return Mono.just(42).delayElement(Duration.ofSeconds(1));
     }
 
     public static Flux<User> userFlux() {

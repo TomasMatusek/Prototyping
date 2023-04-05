@@ -1,6 +1,0 @@
-CREATE TABLE users (
-    id VARCHAR(36) NOT NULL PRIMARY KEY,
-    email VARCHAR(128) NOT NULL,
-    created TIMESTAMP DEFAULT NOW(),
-    enabled BOOLEAN DEFAULT true
-);

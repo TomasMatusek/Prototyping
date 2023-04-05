@@ -176,6 +176,7 @@ let Editor = {
      * @param pageId ID og page to be loaded, e.g.: "P1.P1" (Product1.Page1)
      */
     _createPage: function(pageId) {
+        console.trace("test");
         let page = Editor._getPageConfigurationById(pageId);
         Editor.pageId = page.id;
         Editor._createCanvasDOMElement();
@@ -308,7 +309,7 @@ let Editor = {
                 image.scaleX = scale;
                 image.scaleY = scale;
             }
-
+            console.log(position);
             image.clipPath = position;
             image.top = top;
             image.left = left;
@@ -320,6 +321,7 @@ let Editor = {
 
             Editor.images.push(image);
             Editor.canvas.add(image);
+
 
             // When new image is dropped over old image -> add new image and remove old one
             image.on('drop', function(event) {
@@ -392,6 +394,10 @@ let EditorUI = {
     Editor.loadPage("P1.P1");
     Editor.loadStoredImagesToPositions("P1.P1");
     EditorUI.loadPageThumbnails();
+
+    Editor.canvas.add(new fabric.Text('GeeksforGeeks', {
+        fill: 'green'
+    }));
 
     // When page thumbnail on right bar is clicked -> reload canvas view
     $('.btn-change-page').on('click', function(event) {
